@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ramya Sree Portfolio</title>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
+
+    <!-- AOS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ================= NAVBAR ================= -->
+<nav>
+    <div class="nav-container">
+        <div class="logo" data-aos="zoom-in" data-aos-duration="1000">
+            <span>Ramya sree</span>
+        </div>
+
+        <div class="links">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#education">Education</a>
+            <a href="#skills">Skills</a>
+            <a href="blog.html" target="_blank">Blogs</a>
+            <a href="#projects">projects</a>
+            <a href="contact/contact.html" class="contact-btn">Contact Us</a>
+        </div>
+
+        <i class="fa-solid fa-bars hamburg" onclick="hamburg()"></i>
+    </div>
+
+    <!-- MOBILE DROPDOWN -->
+    <div class="dropdown">
+        <div class="links">
+            <a href="#home" onclick="cancel()">Home</a>
+            <a href="#about" onclick="cancel()">About</a>
+            <a href="#education" onclick="cancel()">Education</a>
+            <a href="#skills" onclick="cancel()">Skills</a>
+            <a href="blog.html" onclick="cancel()">Blogs</a>
+            <a href="#projects" onclick="cancel()">projects</a>            
+            <a href="contact/contact.html" onclick="cancel()">Contact</a>
+            <i class="fa-solid fa-xmark cancel" onclick="cancel()"></i>
+        </div>
+    </div>
+</nav>
+
+<!-- ================= HOME ================= -->
+<section class="slide" id="home">
+    <div class="main-container">
+        <div class="image" data-aos="zoom-in-right" data-aos-duration="2000">
+            <img src="images/main.png" alt="profile">
+        </div>
+
+        <div class="content">
+            <h1 data-aos="fade-left" data-aos-delay="800">
+                Hey I'm <span>Ramya sree</span>
+            </h1>
+
+            <div class="typewriter" data-aos="fade-right" data-aos-delay="900">
+                I'm a <span></span>
+            </div>
+
+            <p data-aos="flip-up" data-aos-delay="1000">
+                I am a passionate Web Developer with strong Python skills and a deep interest in Artificial Intelligence.
+            </p>
+
+            <div class="social-links" data-aos="flip-down" data-aos-delay="1200">
+                <a href="https://github.com/ramyasreeveerla117-coder" target="_blank"><i class="fa-brands fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/ramyasree-veerla-380a1330b/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+            </div>
+            <div>
+  <button class="cv-btn">
+    <a href="Ramyasree_veerla_Resume.pdf" download target="_blank">Download CV</a>
+  </button>
+</div>
+
+    </div>
+</section>
+
+<!-- ================= ABOUT ================= -->
+<section class="slide" id="about">
+    <div class="about-container">
+        <h2 data-aos="fade-down">About Me</h2>
+
+        <p data-aos="fade-up">
+            I am Ramya Sree, a passionate Web Developer and Python Programmer with a strong interest in Artificial Intelligence.
+            I enjoy building responsive websites and working on Python-based projects.
+        </p>
+
+        <p data-aos="fade-up" data-aos-delay="200">
+            I am always eager to learn new technologies and improve my problem-solving skills.
+        </p>
+
+        <div class="about-details" data-aos="zoom-in">
+            <div><strong>Name:</strong> Ramya Sree</div>
+            <div><strong>Role:</strong> Web Developer | Python Coder</div>
+            <div class="center-item">
+                <strong>Interest:</strong> Artificial Intelligence
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ================= EDUCATION ================= -->
+<section class="slide" id="education">
+    <div class="education-container">
+        <h2 data-aos="fade-down">Education</h2>
+
+        <div class="edu-card" data-aos="fade-right">
+            <h3>B.Tech – CSE (AI & ML)</h3>
+            <p>2023 – 2026</p>
+        </div>
+
+        <div class="edu-card" data-aos="fade-left">
+            <h3>Diploma – Computer Science</h3>
+            <p>2020 – 2023</p>
+        </div>
+
+        <div class="edu-card" data-aos="fade-right">
+            <h3>SSC</h3>
+            <p>2019 – 2020</p>
+        </div>
+    </div>
+</section>
+<!-- ================= PROJECTS ================= -->
+<section class="slide" id="projects">
+    <div class="projects-container">
+        <h2 data-aos="fade-down">Projects</h2>
+
+        <div class="projects-grid" >
+
+            <!-- Project 1 -->
+            <div class="project-card" data-aos="zoom-in">
+                <h3>Portfolio Website</h3>
+                <img src="C:\portfolio\images\portfolio.png" alt="Portfolio Website" width="300">
+                <p>
+                    A personal responsive portfolio website showcasing my skills,
+                    projects, and contact information using HTML, CSS, and JavaScript.
+                </p>
+            </div>
+
+            <!-- Project 2 -->
+            <div class="project-card" data-aos="zoom-in" data-aos-delay="200">
+                <h3>Personality Prediction through CV Analysis</h3>
+                <img src="C:\portfolio\images\ai project.png" alt="Personality Prediction" width="300">
+                <p>
+                    A research-based project that analyzes CV data to predict personality
+                    traits using Python and machine learning techniques.
+                </p>
+            </div>
+
+            <!-- Project 3 -->
+            <div class="project-card" data-aos="zoom-in" data-aos-delay="300">
+                <h3>Python Tkinter Calculator</h3>
+                <img src="C:\portfolio\images\python calculator.png" alt="Python Calculator" width="300">
+                <p>
+                    A GUI-based calculator application built using Python Tkinter
+                    supporting basic arithmetic operations.
+                </p>
+            </div>
+
+            <!-- Project 4 -->
+            <div class="project-card" data-aos="zoom-in" data-aos-delay="100">
+                <h3>Python Word Guessing Game</h3>
+                <img src="C:\portfolio\images\quiz.png" alt="Word Guessing Game" width="300">
+                <p>
+                    An interactive word guessing game developed in Python
+                    that improves logical thinking and vocabulary skills.
+                </p>
+            </div>
+
+        </div>
+    </div>
+</section>
+<!-- ================= SKILLS ================= -->
+<section class="slide" id="skills">
+    <div class="skills-container">
+        <h2 data-aos="fade-down">Skills</h2>
+
+        <div class="skills-grid">
+
+            <!-- Frontend -->
+            <div class="skill-box" data-aos="fade-right">
+                <h3>Frontend</h3>
+
+                <div class="skill">
+                    <span>HTML</span>
+                    <div class="progress">
+                        <div style="width:90%"></div>
+                    </div>
+                </div>
+
+                <div class="skill">
+                    <span>CSS</span>
+                    <div class="progress">
+                        <div style="width:85%"></div>
+                    </div>
+                </div>
+
+                <div class="skill">
+                    <span>JavaScript</span>
+                    <div class="progress">
+                        <div style="width:70%"></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Backend / Programming -->
+            <div class="skill-box" data-aos="fade-left">
+                <h3>Programming</h3>
+
+                <div class="skill">
+                    <span>Python</span>
+                    <div class="progress">
+                        <div style="width:80%"></div>
+                    </div>
+                </div>
+
+                <div class="skill">
+                    <span>SQL</span>
+                    <div class="progress">
+                        <div style="width:65%"></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tools -->
+            <div class="skill-box" data-aos="fade-right">
+                <h3>Tools & Technologies</h3>
+
+                <div class="skill">
+                    <span>Git & GitHub</span>
+                    <div class="progress">
+                        <div style="width:75%"></div>
+                    </div>
+                </div>
+
+                <div class="skill">
+                    <span>Tkinter</span>
+                    <div class="progress">
+                        <div style="width:70%"></div>
+                    </div>
+                </div>
+
+                <div class="skill">
+                    <span>Machine Learning (Basics)</span>
+                    <div class="progress">
+                        <div style="width:60%"></div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
+
+<!-- ================= SCRIPTS ================= -->
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+  AOS.init({ offset: 0 });
+</script>
+
+<script>
+function hamburg(){
+    document.querySelector(".dropdown").style.transform = "translateY(0)";
+}
+function cancel(){
+    document.querySelector(".dropdown").style.transform = "translateY(-500px)";
+}
+</script>
+
+</body>
+</html>

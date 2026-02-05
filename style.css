@@ -1,0 +1,398 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+/* ===== GLOBAL SCROLL FIX ===== */
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    background: linear-gradient(to right,#fff,#fed7ad);
+    overflow-y: scroll;
+    scroll-snap-type: y mandatory;
+}
+
+/* ===== SLIDES ===== */
+.slide{
+    height:100vh;
+    scroll-snap-align:start;
+}
+
+/* ===== NAVBAR ===== */
+nav{
+    height:10vh;
+}
+
+.nav-container{
+    display:flex;
+    justify-content:space-around;
+    align-items:center;
+    height:100%;
+}
+
+.logo{
+    font-size:2rem;
+    font-weight:bold;
+}
+
+.logo span{
+    color:rgb(109,67,0);
+    text-shadow:0 0 10px rgb(109,67,0);
+}
+
+.links{
+    display:flex;
+    gap:2rem;
+}
+
+.links a{
+    text-decoration:none;
+    color:black;
+    font-weight:500;
+}
+
+.links a:hover{
+    color:rgb(109,67,0);
+}
+
+.contact-btn{
+    border:2px solid rgb(109,67,0);
+    padding:5px 15px;
+    border-radius:20px;
+}
+
+/* ===== DROPDOWN ===== */
+.dropdown{
+    position:absolute;
+    top:0;
+    width:100%;
+    transform:translateY(-500px);
+    background:rgba(0,0,0,0.7);
+    transition:0.3s;
+    z-index:10;
+}
+
+.dropdown a{
+    color:white;
+    display:block;
+    padding:15px;
+    text-align:center;
+}
+
+.hamburg,.cancel{
+    display:none;
+    font-size:2rem;
+    cursor:pointer;
+}
+
+/* ===== HOME SECTION ===== */
+.main-container{
+    height:100%;
+    display:flex;
+    justify-content:space-evenly;
+    align-items:center;
+}
+
+.image img{
+    width:400px;
+}
+
+.content{
+    width:40%;
+}
+
+.content h1{
+    font-size:3rem;
+}
+
+.content h1 span{
+    color:rgb(109,67,0);
+}
+
+/* ===== TYPEWRITER ===== */
+.typewriter{
+    font-size:2rem;
+    font-weight:600;
+}
+
+.typewriter span{
+    color:rgb(109,67,0);
+    position:relative;
+}
+
+.typewriter span::before{
+    content:"Web Developer";
+    animation:words 12s infinite;
+}
+
+.typewriter span::after{
+    content:"";
+    position:absolute;
+    height:100%;
+    width:100%;
+    border-left:3px solid black;
+    animation:cursor 0.6s infinite;
+}
+
+@keyframes words{
+    0%,33%{content:"Web Developer";}
+    34%,66%{content:"Python Coder";}
+    67%,100%{content:"AI Enthusiast";}
+}
+
+@keyframes cursor{
+    50%{border-left:3px solid transparent;}
+}
+
+/* ===== SOCIAL ===== */
+.social-links i{
+    width:3rem;
+    height:3rem;
+    border:2px solid rgb(109,67,0);
+    border-radius:50%;
+    display:inline-flex;
+    justify-content:center;
+    align-items:center;
+    margin:10px;
+    color:rgb(109,67,0);
+    transition:0.3s;
+}
+
+.social-links i:hover{
+    background:rgb(109,67,0);
+    color:white;
+}
+
+/* ===== BUTTON ===== */
+button{
+    margin-top:20px;
+    padding:10px 25px;
+    background:rgb(156, 101, 13);
+    border:none;
+    font-weight:600;
+    cursor:pointer;
+}
+button a{
+    color:black;           /* ← THIS controls the text */
+    text-decoration:none;
+}
+button:hover {
+  background: #894905;
+}
+
+/* ===== EDUCATION ===== */
+#education{
+    background: linear-gradient(to right,#fed7ad,#fff);
+}
+
+.education-container{
+    height:100%;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    gap:30px;
+}
+
+.education-container h2{
+    font-size:3rem;
+    color:rgb(109,67,0);
+}
+
+.edu-card{
+    width:60%;
+    background:white;
+    padding:20px;
+    border-left:5px solid rgb(109,67,0);
+    box-shadow:0 0 10px rgba(0,0,0,0.1);
+}
+
+/* ===== ABOUT ===== */
+#about{
+    background: linear-gradient(to right,#fff,#fed7ad);
+}
+
+.about-container{
+    height:100%;
+    width:80%;
+    margin:auto;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    gap:20px;
+}
+
+.about-details{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:15px;
+}
+
+.about-details div{
+    background:white;
+    padding:15px;
+    border-left:4px solid rgb(109,67,0);
+}
+
+.center-item{
+    grid-column:1 / -1;
+    text-align:center;
+}
+/* ---------- PROJECTS SLIDE ---------- */
+#projects{
+    background: linear-gradient(to right,#fed7ad,#fff);
+}
+
+.projects-container{
+    height:100%;
+    width:85%;
+    margin:auto;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+}
+
+.projects-container h2{
+    font-size:3rem;
+    color:rgb(109,67,0);
+    margin-bottom:30px;
+}
+
+.projects-grid{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:30px;
+}
+
+.project-card{
+    background:white;
+    padding:15px;
+    border-radius:10px;
+    box-shadow:0 0 15px rgba(0,0,0,0.1);
+    transition:0.3s;
+}
+
+.project-card:hover{
+    transform:translateY(-8px);
+}
+
+.project-card img{
+    width:100%;
+    height:180px;
+    object-fit:cover;
+    border-radius:8px;
+    margin-bottom:15px;
+}
+
+.project-card h3{
+    color:rgb(109,67,0);
+    margin-bottom:10px;
+}
+
+.project-card p{
+    font-size:0.95rem;
+    line-height:1.5;
+}
+/* ---------- SKILLS SLIDE ---------- */
+#skills{
+    background: linear-gradient(to right,#fff,#fed7ad);
+}
+
+.skills-container{
+    height:100%;
+    width:85%;
+    margin:auto;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+}
+
+.skills-container h2{
+    font-size:3rem;
+    color:rgb(109,67,0);
+    margin-bottom:30px;
+}
+
+.skills-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:30px;
+}
+
+.skill-box{
+    background:white;
+    padding:20px;
+    border-radius:10px;
+    box-shadow:0 0 15px rgba(0,0,0,0.1);
+}
+
+.skill-box h3{
+    color:rgb(109,67,0);
+    margin-bottom:15px;
+}
+
+.skill{
+    margin-bottom:15px;
+}
+
+.skill span{
+    font-weight:500;
+    display:block;
+    margin-bottom:5px;
+}
+
+.progress{
+    width:100%;
+    height:8px;
+    background:#ddd;
+    border-radius:5px;
+    overflow:hidden;
+}
+
+.progress div{
+    height:100%;
+    background:rgb(109,67,0);
+    border-radius:5px;
+}
+
+/* MOBILE */
+@media(max-width:900px){
+    .skills-grid{
+        grid-template-columns:1fr;
+    }
+}
+
+
+/* MOBILE */
+@media(max-width:768px){
+    .projects-grid{
+        grid-template-columns:1fr;
+    }
+
+    .project-card img{
+        height:200px;
+    }
+}
+
+/* ===== RESPONSIVE ===== */
+@media(max-width:900px){
+    .links{display:none;}
+    .hamburg,.cancel{display:block;}
+    .main-container{flex-direction:column;}
+    .content{width:80%; text-align:center;}
+}
+
+@media(max-width:768px){
+    .edu-card{width:85%;}
+    .about-details{grid-template-columns:1fr;}
+}
